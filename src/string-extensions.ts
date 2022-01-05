@@ -2,6 +2,8 @@
 export {};
 
 declare global {
+    // TypeScript module augmentation.
+    // This will merge with the built in 'String' interface when compiling and checking type usages.
     interface String {
         isEmpty: () => boolean;
     }
